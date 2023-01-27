@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::selection {
+    background-color: #cbe3ef;
+    color: white;
+  }  
+
+.color-fondo{
+    background-color: #cbe3ef;
+    padding-top: 2%;
+}
+
+.bienvenidos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 2%;
+}
+
+.formulario-display{
+padding: 2%;
+}
+
+.formulario-estilos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus{
+    outline: none;
+    border: solid 4px #cbe3ef;
+    border-radius: 5px;
+}
+
+.titulo-pagina{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.texto-pagina{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding-top: 2%;
+    letter-spacing: 3px;
+}
+
+.imgProductos{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 1rem;
+    box-shadow: 9px 8px 17px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 8px 17px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 8px 17px -8px rgba(0,0,0,0.75);
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.card-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    padding-bottom: 4%;
+}
+
+.colorBoton{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #6bb8df;
+}
+
+.colorBoton:hover{
+    background-color: rgb(3, 156, 156);
+    color: white;
+}
+
+.footer-titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    padding-left: 2%;
+}
+
+.footer-lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-top: 1.5%;
+}
+
+.contacto {
+    list-style: none;
+}
+
+.contacto img{
+    width: 10%;
+    height: auto;
+    padding-top: 3%;
+    padding-right: 2%;
+}
+
+.img-redes{
+    width: 25%;
+    padding: 1%;
+    padding-left: 10%;
+}
+
+.whatsapp img{
+    width: 5%;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+ .whatsapp img:hover {
+        transform: scale(1.2);
+        transition: all 1s linear;
+    }
+
+.copyright{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META -->
+    <meta name="description"
+        content="Soy una emprendedora que pinta a mano sobre madera. Me considero una artista que pone mucho amor en todo lo que hace. Podes pedirme tu propio diseño">
+    <meta name="keywords"
+        content="madera, mate, yerbera, cuenco, portasahumerio, pintar, a mano, arte, tabla, cuchara, azucarera, meraki, tienda online, diseño, pintura, artista, emprendedora">
+    <!-- OPEN GRAPH-->
+    <!-- type-->
+    <meta property="og:type" content="Web site">
+    <!-- title-->
+    <meta property="og:title" content="MERAKI TIENDA ONLINE | Pintura en madera | CARRITO DE COMPRAS">
+    <!-- URL-->
+    <meta property="og:url" content="https://stephilegarra.github.io/prenentrega3js/">
+    <!-- imagen-->
+    <meta property="og:image" content="https://stephilegarra.github.io/prenentrega3js/img/logo.ico">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <!-- titulo-->
+    <title>MERAKI TIENDA ONLINE</title>
+    <!-- CSS BOOTRSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS TOASTIFY-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <!--- header-->
+    <nav class="navbar color-fondo">
+        <div class="container-fluid d-lg-flex justify-content-lg-around">
+            <a class="navbar-brand bienvenidos" href="#">
+                <img src="img/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                MERAKI - TIENDA ONLINE
+            </a>
+        </div>
+    </nav>
+
+    <hr>
+    <h1 class="text-center bienvenidos" id="fondo"> ¡Sean bienvenidos! Mis productos están hechos con mucho amor 🧡</h1>
+    <hr>
+    <article>
+        <h2 class="titulo-pagina"> ¿Quien soy?</h2>
+        <p class="texto-pagina"> Mi nombre es Sofia Jujuy, tengo 28 años y soy de Tandil. Hace unos años me convertí en una
+            artista emprendedora de estos trabajos que hago con mucha dedicación. <br>
+            Utilizo materiales de calidad, y me gusta inspirarme e innovar distintos diseños. Si lo desean, pueden
+            diseñar uno propio y ¡me pongo manos a la obra!</p>
+    </article>
+    <hr>
+
+    <h2 class="titulo-pagina"> Ya estoy registrad@</h2>
+    <button class="btn colorBoton" id="iniciarSesion"> Iniciar Sesión</button>
+
+    <hr>
+    <section>
+        <h2 class="titulo-pagina"> Registrate</h2>
+       
+          <form action="/server/" method="post" enctype="application/x-www-form-urlencoded" id="formulario" class="formulario-display">
+            <div class="formulario-estilos">
+            <label for="nombre" name="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+            <br> <br>
+        
+            <label for="apellido" name="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Escribe tu apellido" required> 
+            <br> <br>
+
+            <label for="email"  name="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+            <br> <br>
+
+            <label for="password" name="password">Password</label>
+            <input type="text" id="password" placeholder="Escribe una contraseña" required>
+            <br> <br>
+
+        </div>
+         <div class="boton-display">
+            <button type="submit" class="btn colorBoton" id="botonEnviar">Enviar</button>
+            <button type="reset" class="btn colorBoton">Borrar</button>
+        </div>
+        </form>
+
+
+    </section>
+    <hr>
+    <h2 class="titulo-pagina"> Carrito de compras:</h2>
+   <div id="contenedorProductos" class="row"></div> 
+    <hr>
+
+    <h3 class="texto-pagina"> La compra asciende a un total de: <span id="total"></span></h3>
+   <div class="boton-display">
+    <button class="btn colorBoton" id="verCarrito"> Ver carrito </button>
+    <button class="btn colorBoton" id="vaciarCarrito"> Vaciar carrito</button>
+   </div>
+    <div id="contenedorCarrito" class="row"></div>
+    <button class="btn colorBoton" id="compraFinalizada"> Finalizar compra </button>
+    <h3 class="texto-pagina"> Muchas gracias por visitarnos. Esperamos que disfrutes de tu compra y esperamos volver a verte pronto.</h3>
+    <hr>
+
+    <!-- Footer-->
+    <footer class="color-fondo">
+    <h2 class="footer-titulo"> Contacto </h2>
+    <ul class="footer-lista">
+        <li class="contacto"> <img src="img/logoUbicacion.png" alt="Imagen del logo ubicación">Calle falsa 123, Tandil</li>
+        <li class="contacto"> <img src="img/logoTelefono.png" alt="Imagen del logo teléfono">(249) 411111</li>
+        <li class="contacto"> <img src="img/logoMail.png" alt="Imagen del logo mail">meraki@hotmail.com </li>
+    </ul>
+    
+    <h2 class="footer-titulo"> Redes</h2>
+    <nav>
+    <div class="footer-lista">
+                <div> <a href="https://www.facebook.com" target="_blank">
+                    <img class="img-redes" src="img/logoFacebook.png" alt="Facebook"></a>
+                </div>
+                <div> <a href="https://instagram.com/" target="_blank">
+                    <img class="img-redes" src="img/logoInstagram.png" alt="Instagram"></a>
+                </div>
+              </div>
+      
+              <div class="whatsapp"> <a href="https://web.whatsapp.com/" target="_blank">
+                  <img src="img/Logowhatsapp.png" alt="WhatsApp"> </a>
+              </div>
+          </nav>
+          </div>
+      
+          <h4 class="copyright"> ©Stephanie </h4>
+        </footer>
+
+  <!-- script toastify-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- script sweet alert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- JavaScript Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

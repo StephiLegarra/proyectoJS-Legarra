@@ -1,0 +1,9 @@
+[
+    {"id": 1, "nombre": "Mate", "precio": 1500, "img": "/img/mate.png"},
+    {"id": 2, "nombre": "Cuenco", "precio": 900, "img": "/img/cuenco.png"},
+    {"id": 3, "nombre": "Portasahumerio", "precio": 750, "img": "img/portasahumerio.png"},
+    {"id": 4, "nombre": "Tabla", "precio": 1800, "img": "img/tabla.png"},
+    {"id": 5, "nombre": "Cuchara", "precio": 600, "img": "img/cuchara.png"},
+    {"id": 5, "nombre": "Yerbera", "precio": 1100, "img": "img/yerbera.png"}
+]
+
